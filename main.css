@@ -1,0 +1,98 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#bekeres {
+    display: none;
+    width: fit-content;
+}
+
+input[type=text] {
+    width: 16rem;
+    padding: 14px 20px;
+    border: 1px solid black;
+    border-radius: 0 28px;
+    cursor: pointer;
+}
+
+input[type=text], .label, .button {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 0 3pt 2pt black;
+    font-size: larger;
+    margin: 0;
+}
+
+.button {
+    width: 12rem;
+    padding: 15px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.label {
+  padding: 14px 20px;
+  border: none;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+#display {
+    display: none;
+    background-color: darkgreen;
+    font-size: 200%;
+    color: white;
+    display: inline;
+    width: fit-content;
+    padding: 1ch;
+    border-radius: 1ch;
+   -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.button:hover, input[type=text]:hover, input[type=text]:focus {
+    outline: 0;
+    box-shadow: 0 0 3pt 2pt red;
+}
+
+.testbox {
+    width: 100%;
+    height: 128px;
+    border: solid 1px black;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    width: 50%;
+    justify-content: space-between;
+    padding: 12px;
+}
+.btn {
+    outline: 0;
+    box-shadow: 0 0 3pt 2pt black;
+    width: 6rem;
+    padding: 6px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+}
